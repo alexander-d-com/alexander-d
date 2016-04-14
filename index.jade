@@ -1,39 +1,7 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Alexander D
-    link(rel='stylesheet', href='css/style.css')
-    
-  body
-    header
-      .title Alexander
-      .sub-title Unluckly, my career is online.
-      
-    section.article
-      .article-title Grumpy wizards make toxic brew for the evil Queen and Jack.
-      .article-content 
-        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-        |  dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
-        |  nascetur ridiculus mus.
-        br
-        br
-        |  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
-        |  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In 
-        |  enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-      button(type='button').btn-read-more.pull-right Read more...
-      
-    section.article
-      .article-title Grumpy wizards make toxic brew for the evil Queen and Jack.
-      .article-content 
-        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-        |  dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
-        |  nascetur ridiculus mus.
-        br
-        br
-        |  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat 
-        |  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In 
-        |  enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-      button(type='button').btn-read-more.pull-right Read more...
+extends assets/layout.jade
+include assets/single-article.jade
+
+block content
+  +article
+  +article
+  +article
