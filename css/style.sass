@@ -1,19 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700)
+@import "_partials/_common.sass"
+@import "_partials/_grid.sass"
 
-:root
-  font-size: 16px
-
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
-body
-  font-family: 'Open Sans', sans-serif
-  font-weight: 400
-
-.title
-  font-size: 3rem
-  font-weight: 400
+header
   text-align: center
-  padding-top: 1.04em
+  margin-top: 3.15rem
+  margin-bottom: 9.375rem
+
+  .title
+    font-size: 3rem
+    margin-bottom: 0.20em
+
+  .sub-title
+    font-size: 1.5rem
+    color: $text-secondary
+
+section.article
+  max-width: 46.5rem
+  margin: 0 auto 3.125rem
+  overflow: hidden
+
+  .article-title
+    font-size: 1.25rem
+    font-weight: 700
+    margin-bottom: 1em
+
+  .article-content
+    font-size: 1.125rem
+    margin-bottom: 1.11em
+
+  button.btn-read-more
+    height: 3.125rem
+    width: 9.375rem
+    border: none
+    background-color: $light-grey
+    cursor: pointer
+    outline: none
+    font-size: 1.125rem
