@@ -1,17 +1,9 @@
 extends assets/layout.jade
-include assets/single-article.jade
+include assets/mixins.jade
 
 block content
-  +article
-  +article
-  +article
-  +article
-  +article
-  
-  
-  .pagination
-    button(type='button').btn-pagination 
-      span.stretch <
-    button(type='button').btn-pagination 
-      span.stretch >
+  - for (var i = 0; i < 5; i++) 
+    +article
+    
+  +pagination
     
