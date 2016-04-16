@@ -12,8 +12,18 @@
   </section><!--end post-->
 <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
   <div class="pagination">
-    <div class="alignleft"><?php next_posts_link( '<' ); ?></div>
-    <div class="alignright"><?php previous_posts_link( '>' ); ?></div>
+
+    <div class="alignleft"><?php next_posts_link( '
+    <button type="button" class="btn-pagination">
+      <span class="stretch"><
+      </span>
+    </button>' ); ?></div>
+    <div class="alignright"><?php previous_posts_link( '
+    <button type="button" class="btn-pagination">
+      <span class="stretch">>
+      </span>
+    </button>
+    ' ); ?></div>
   </div><!--end navigation-->
 <?php else : ?>
 <?php endif; ?>
