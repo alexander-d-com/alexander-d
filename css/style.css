@@ -122,18 +122,30 @@ section.article .article-content {
   margin-bottom: 1.11em;
 }
 
+section.article .article-date {
+  font-size: 1.125rem;
+  margin-bottom: 1.11em;
+}
+
 section.article button.btn-read-more {
   width: 9.375rem;
   font-size: 1.125rem;
 }
 
-button.btn-pagination {
+button.btn-pagination,
+button.btn-backToList {
   font-size: 1.25rem;
 }
 
-button.btn-pagination span.stretch {
+button.btn-pagination span.stretch,
+button.btn-backToList span.stretch {
   display: inline-block;
   transform: scaleY(1.5);
+}
+
+button.btn-backToList {
+  width: 12.22em;
+  text-align: center;
 }
 
 footer {

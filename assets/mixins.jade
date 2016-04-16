@@ -11,11 +11,14 @@ mixin article(title)
       Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
       massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
       enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-    button(type='button').btn-read-more.pull-right Read more...
+    a(href='article.html')
+      button(type='button').btn-read-more.pull-right Read more...
 
 mixin pagination
   .pagination
-    button(type='button').btn-pagination 
-      span.stretch <
-    button(type='button').btn-pagination 
-      span.stretch >
+    a(href='#')
+      button(type='button').btn-pagination 
+        span.stretch <
+    a(href='#')
+      button(type='button').btn-pagination 
+        span.stretch >
