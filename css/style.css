@@ -119,7 +119,6 @@ section.article .article-title {
 
 section.article .article-content {
   font-size: 1.125rem;
-  margin-bottom: 1.11em;
 }
 
 section.article .article-date {
@@ -130,6 +129,7 @@ section.article .article-date {
 section.article button.btn-read-more {
   width: 9.375rem;
   font-size: 1.125rem;
+  margin-top: 1.11em;
 }
 
 button.btn-pagination,

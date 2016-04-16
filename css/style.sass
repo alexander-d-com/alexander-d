@@ -26,7 +26,9 @@ section.article
 
   .article-content
     font-size: 1.125rem
-    margin-bottom: 1.11em
+    // margin added to the top of the button instead because of wordpress
+    // rendering the button inside the article content
+    //margin-bottom: 1.11em
 
   .article-date
     font-size: 1.125rem
@@ -35,6 +37,9 @@ section.article
   button.btn-read-more
     width: 9.375rem
     font-size: 1.125rem
+    // added this because of wordpress rendering the Read More button inside the
+    // article content instead of outside it
+    margin-top: 1.11em
 
 button.btn-pagination,
 button.btn-backToList
