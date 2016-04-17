@@ -7,7 +7,10 @@ block content
     .article-content.
       The page you were looking for could not be found, but if you need it that 
       bad just send me a mail and I’ll be back to you asap.
-  .funnybunny 404
-  button(type='button').btn-backToList 
-  span.stretch < &nbsp;
-  | Back to articles
+  .funnybunny 
+    img(src='img/bunny.svg')
+    span.img-text 404
+  a(href='index.html')
+    button(type='button').btn-backToList 
+      span.stretch < &nbsp;
+      | Back to home

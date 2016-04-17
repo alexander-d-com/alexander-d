@@ -1,25 +1,15 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentysixteen' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentysixteen' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-
-		<?php get_sidebar( 'content-bottom' ); ?>
-
-	</div><!-- .content-area -->
+<section class="article">
+  <div class="article-title">Oops. Something went weird.</div>
+  <div class="article-content">
+    The page you were looking for could not be found, but if you need it that
+    bad just send me a mail and I’ll be back to you asap.
+  </div>
+</section>
+<div class="funnybunny"> <img src="<?php echo get_bloginfo('template_directory');?>/img/bunny.svg"><span class="img-text">404</span></div>
+<a href="<?php echo get_settings('home'); ?>">
+  <button type="button" class="btn-backToList"> <span class="stretch">< &nbsp;</span>Back to home</button></a>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
