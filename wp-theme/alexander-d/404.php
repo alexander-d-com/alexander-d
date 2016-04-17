@@ -7,9 +7,17 @@
     bad just send me a mail and I’ll be back to you asap.
   </div>
 </section>
-<div class="funnybunny"> <img src="<?php echo get_bloginfo('template_directory');?>/img/bunny.svg"><span class="img-text">404</span></div>
+<div class="funnybunny">
+  <img src="<?php echo get_bloginfo('template_directory');?>/img/bunny.svg">
+  <span class="img-text">404</span>
+</div>
 <a href="<?php echo get_settings('home'); ?>">
-  <button type="button" class="btn-backToList"> <span class="stretch">< &nbsp;</span>Back to home</button></a>
+  <button type="button" class="btn-backToList">
+    <span class="stretch">
+      < &nbsp;
+    </span>Back to home
+  </button>
+</a>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
