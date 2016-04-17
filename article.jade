@@ -1,6 +1,10 @@
 extends assets/layout.jade
 
 block content
+  script.
+    function goBack() {
+    window.history.back()
+    }
   section.article
     .article-date 16/04/2016
     .article-title.
@@ -36,7 +40,6 @@ block content
       | faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec 
       | sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue 
       | velit cursus nunc.
-    a(href='index.html')
-      button(type='button').btn-backToList 
-        span.stretch < &nbsp;
-        | Back to articles
+  button(type='button', onclick='goBack()').btn-backToList 
+  span.stretch < &nbsp;
+  | Back to articles
