@@ -23,6 +23,27 @@ function goBack() {
 
   <div class="article-date">
     <?php the_date(); ?>
+		<?php
+			echo '<span class="revision pull-right">';
+
+			function rev_count() {
+				$post_id = get_the_ID();
+				$args = wp_get_post_revisions($post_id);
+				return count($args);
+			}
+
+			if (rev_count() > 0) {
+				echo "Rev. ";
+				echo rev_count();
+			}
+
+			if (get_the_modified_date() != get_the_date()) {
+				echo " | ";
+				echo the_modified_date();
+			}
+
+			echo "</span>";
+		 ?>
   </div>
 
 	<div class="article-title">

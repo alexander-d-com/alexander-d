@@ -126,6 +126,11 @@ section.article .article-date {
   margin-bottom: 1.11em;
 }
 
+section.article .article-date span.revision {
+  font-size: 0.875em;
+  color: rgba(14, 14, 14, 0.4);
+}
+
 section.article button.btn-read-more {
   width: 9.375rem;
   font-size: 1.125rem;

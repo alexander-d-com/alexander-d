@@ -9,7 +9,7 @@
       bloginfo('name'); ?>
     </title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
   </head>
   <body <?php body_class(); ?>>
