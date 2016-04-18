@@ -1,7 +1,22 @@
 <script>
 function goBack() {
-  window.history.back()
-  }
+	window.history.back()
+}
+</script>
+
+<script>
+	function goBackOrRoot(url)
+	{
+		var currentUrl = window.location.href;
+		window.history.back();
+		setTimeout(function(){
+			// if location was not changed in 100 ms, then there is no history back
+			if(currentUrl === window.location.href){
+				// redirect to site root
+				window.location.href = url;
+			}
+		}, 500);
+	}
 </script>
 
 <section class="article">
@@ -21,7 +36,9 @@ function goBack() {
 	</div><!-- end entry -->
 </section><!-- end post -->
 
-  <button type="button" class="btn-backToList" onclick="goBack()">
+
+
+  <button type="button" class="btn-backToList" onclick="goBackOrRoot('<?php echo get_settings('home'); ?>')">
     <span class="stretch">
       < &nbsp;
     </span>

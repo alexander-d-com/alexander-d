@@ -1,12 +1,26 @@
 extends assets/layout.jade
-
+  
 block content
   script.
     function goBack() {
     window.history.back()
-    }
+    };
+  script.
+    function goBackOrRoot(url)
+    {
+      var currentUrl = window.location.href;
+      window.history.back();
+      setTimeout(function(){
+        // if location was not changed in 100 ms, then there is no history back
+        if(currentUrl === window.location.href){
+          // redirect to site root
+          window.location.href = url;
+        }
+      }, 500);
+    };
   section.article
     .article-date 16/04/2016
+    .article-revision Rev. 4 | 18/04/2016
     .article-title.
       Grumpy wizards make toxic brew for the evil Queen and Jack.
     .article-content
@@ -40,6 +54,6 @@ block content
       | faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec 
       | sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue 
       | velit cursus nunc.
-  button(type='button', onclick='goBack()').btn-backToList 
-  span.stretch < &nbsp;
-  | Back to articles
+  button(type='button', onclick="goBackOrRoot('index.html')").btn-backToList 
+    span.stretch < &nbsp;
+    | Back to articles
