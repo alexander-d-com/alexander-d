@@ -100,6 +100,16 @@ button {
   margin: 0 auto;
 }
 
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption img {
+  max-width: 100%;
+  height: auto;
+
+}
+
 header {
   text-align: center;
   margin-top: 3.15rem;
