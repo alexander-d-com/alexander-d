@@ -99,6 +99,16 @@ button {
   float: left;
 }
 
+.wp-caption-text {
+  text-align: center;
+  font-size: 0.88em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.wp-caption.aligncenter {
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
   margin-top: 3.15rem;
