@@ -33,6 +33,44 @@ button {
   width: 3.125rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0.83em 0;
+}
+
+blockquote {
+  font-size: 1rem;
+  color: rgba(14, 14, 14, 0.9);
+  max-width: 90%;
+  margin: 1.25em auto;
+  padding: 0.625em;
+  position: relative;
+  quotes: "\201C""\201D";
+}
+
+blockquote::before {
+  font-family: Georgia, serif;
+  content: open-quote;
+  font-size: 5rem;
+  position: absolute;
+  top: -0.125em;
+  left: -0.312em;
+  color: rgba(14, 14, 14, 0.5);
+}
+
+blockquote::after {
+  content: no-close-quote;
+}
+
+blockquote cite {
+  font-size: 0.875rem;
+  color: rgba(14, 14, 14, 0.8);
+}
+
 .pull-right {
   float: right;
 }
@@ -113,12 +151,6 @@ button {
   max-width: 100%;
 }
 
-.wp-caption img {
-  max-width: 100%;
-  height: auto;
-  
-}
-
 header {
   text-align: center;
   margin-top: 3.15rem;
@@ -148,6 +180,11 @@ section.article .article-title {
 
 section.article .article-content {
   font-size: 1.125rem;
+}
+
+section.article .article-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 section.article .article-date {
