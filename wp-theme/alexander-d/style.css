@@ -24,6 +24,21 @@ body {
   margin: auto 1.25em;
 }
 
+a {
+  text-decoration: none;
+  color: #0D47A1;
+}
+
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0A3880;
+}
+
 button {
   border: none;
   background-color: #eaeaea;
